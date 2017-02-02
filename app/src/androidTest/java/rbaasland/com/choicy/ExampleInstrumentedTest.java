@@ -1,4 +1,4 @@
-package rbaasland.com.toughchoice;
+package rbaasland.com.choicy;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

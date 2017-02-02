@@ -1,4 +1,4 @@
-package rbaasland.com.toughchoice;
+package rbaasland.com.choicy;
 
 import org.junit.Test;
 

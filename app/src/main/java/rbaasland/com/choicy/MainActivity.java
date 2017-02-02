@@ -1,4 +1,4 @@
-package rbaasland.com.toughchoice;
+package rbaasland.com.choicy;
 
 import android.app.ListActivity;
 import android.os.Bundle;
@@ -10,7 +10,8 @@ import android.widget.Toast;
 
 public class MainActivity extends ListActivity {
     ListView mChoiceListView;
-    String[] mValues = new String[] { "Android List View",
+    String[] mValues = new String[] {
+            "Choice View",
             "1. Adapter implementation",
             "2. Simple List View In Android",
             "3. Create List View Android",
@@ -43,7 +44,6 @@ public class MainActivity extends ListActivity {
                 android.R.layout.simple_list_item_1, android.R.id.text1, mValues);
 
         mChoiceListView.setAdapter(adapter);
-
 
         mChoiceListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
