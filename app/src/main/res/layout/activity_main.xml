@@ -1,13 +1,56 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/gradientbg">
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gradientbg">
 
-    <TextView
-        android:textColor="#FFFFFFFF"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:gravity="center"
+    <ListView
+        android:id="@android:id/list"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_above="@+id/bottomLayout"
+        android:paddingBottom="16dp">
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#99ffffff">
+
+        <Button
+            android:text="Add"
+            android:id="@+id/addButton"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp">
+        </Button>
+
+        <EditText
+            android:id="@+id/newEntry"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_alignBaseline="@+id/addButton"
+            android:layout_alignBottom="@+id/addButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/addButton"
+            android:layout_toStartOf="@+id/addButton"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="0dp">
+        </EditText>
+
+    </RelativeLayout>
+
 </RelativeLayout>
