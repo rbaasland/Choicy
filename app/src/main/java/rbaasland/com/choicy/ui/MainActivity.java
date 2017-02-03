@@ -1,4 +1,4 @@
-package rbaasland.com.choicy;
+package rbaasland.com.choicy.ui;
 
 import android.app.ListActivity;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import rbaasland.com.choicy.R;
 
 public class MainActivity extends ListActivity {
     ListView mChoiceListView;
