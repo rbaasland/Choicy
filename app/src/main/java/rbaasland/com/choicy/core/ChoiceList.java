@@ -28,7 +28,28 @@ public class ChoiceList {
         this.mRandomChoice = randomChoice;
     }
 
+    public ArrayList<String> getChoices() {
+        return mChoices;
+    }
+
+    public void setChoices(ArrayList<String> choices) {
+        mChoices = choices;
+    }
+
     public void addChoiceToList(String choice) {
-        mChoices.add(choice);
+        if (!this.isFull()) {
+            mChoices.add(choice);
+        }
+
+    }
+
+    protected boolean isFull() {
+        int size = mChoices.size();
+
+        if (size <= mMaxChoices) {
+            return false;
+        } else {
+            return true;
+        }
     }
 }
