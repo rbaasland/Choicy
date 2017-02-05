@@ -32,15 +32,13 @@ public class ChoiceList {
         return mChoices;
     }
 
-    public void setChoices(ArrayList<String> choices) {
-        mChoices = choices;
-    }
-
-    public void addChoiceToList(String choice) {
+    public boolean addChoiceToList(String choice) throws IllegalArgumentException {
         if (!this.isFull()) {
             mChoices.add(choice);
+            return true;
         }
 
+        return false;
     }
 
     protected boolean isFull() {
